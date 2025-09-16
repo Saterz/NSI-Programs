@@ -13,6 +13,9 @@ def saisie():
 
 # Calcul de la factorielle
 def factorielle(nombre):
+    """
+    Calcule la factorielle
+    """
     print("Calcul...", end="", flush=True)
     resultat = 1
     for chiffre in range(nombre):
