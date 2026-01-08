@@ -1,3 +1,7 @@
+###
+# ACTIVITES LES DICTIONNAIRES.pdf
+###
+
 # Activité 3.1
 mes_fruits = {"poire": 3, "pomme": 4, "orange": 2}
 print(mes_fruits) # {'poire': 3, 'pomme': 4, 'orange': 2}
