@@ -1,3 +1,7 @@
+###
+# ACTIVITES LES SEQUENCES.pdf
+###
+
 # Activité 2.1
 mon_tuple = (5, 8, 6, 9)
 print(mon_tuple) # (5, 8, 6, 9)
