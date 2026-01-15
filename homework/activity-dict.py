@@ -1,7 +1,3 @@
-###
-# ACTIVITES LES DICTIONNAIRES.pdf
-###
-
 # Activité 3.1
 mes_fruits = {"poire": 3, "pomme": 4, "orange": 2}
 print(mes_fruits) # {'poire': 3, 'pomme': 4, 'orange': 2}
@@ -64,6 +60,12 @@ print(numTel("Tulu", tab)) # -1
 
 # Activité 3.8
 tab = [{'nom': 'Titi', 'note': 12}, {"nom": 'Tutu', "note":11}, {'nom': 'Toto', 'note':17}]
+
+def sum(list):
+	answer = 0
+	for entry in list:
+		answer += entry
+	return answer
 
 def moyenne(tab):
 	notes = []
