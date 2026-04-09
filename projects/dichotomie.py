@@ -1,23 +1,16 @@
-liste = [i * 0.5 for i in range(10)]
+liste = [i * 0.5 for i in range(999)]
 
-def rech_par_dichotomie(liste: list[float], elem: float):
-    trouve = False
-    position = None
-    while trouve == False:
-        n = len(liste)
-        milieu = round(n / 2)
+def rech_par_dichotomie(liste: list[float], elem: float)-> int | None:
+    debut: int = 0
+    fin: int = len(liste) - 1
+    while debut <= fin:
+        milieu: int = (debut + fin) // 2
         if liste[milieu] < elem:
-            print(f"Le milieu est plus petit que l'élément recherché : {liste[milieu]} < {elem}")
-            liste = liste[milieu + 1:n]
-            print(liste)
+            debut = milieu + 1
         elif liste[milieu] > elem:
-            print(f"Le milieu est plus grand que l'élément recherché : {liste[milieu]} > {elem}")
-            liste = liste[0:milieu]
-            print(liste)
-        elif liste[milieu] == elem:
-            position = milieu
-            trouve = True
-    return position
+            fin = milieu - 1
+        else:
+            return milieu
+    return None
 
-print(liste)
-print(rech_par_dichotomie(liste, 2.3))
+print(rech_par_dichotomie(liste, 100))
